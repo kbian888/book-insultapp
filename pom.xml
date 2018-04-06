@@ -18,6 +18,12 @@
             <artifactId>postgresql</artifactId>
             <version>42.2.2</version>
         </dependency>
+        <dependency>
+           <groupId>javax</groupId>
+           <artifactId>javaee-api</artifactId>
+           <version>7.0</version>
+           <scope>provided</scope>
+        </dependency>
     </dependencies>
 <build>
     <plugins>
@@ -45,11 +51,11 @@
           <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.6</version>
+                <version>3.2.0</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <outputDirectory>target</outputDirectory>
-              		  <warName>ROOT</warName>
+              		<warName>ROOT</warName>
                 </configuration>
             </plugin>
         </plugins>
